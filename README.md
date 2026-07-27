@@ -9,7 +9,44 @@ Uma calculadora de **alta estética, arquitetura modular e desempenho profission
 
 ---
 
-## ✨ Destaques Visual e Funcional
+## 📥 Como Baixar e Instalar no Seu Computador
+
+Você pode baixar e rodar este projeto livremente de duas formas rápidas:
+
+### 🚀 Opção 1: Clonando via Git (Recomendado para Desenvolvedores)
+Abra o seu terminal (PowerShell, CMD, ou Terminal do Linux/macOS) e execute os seguintes passos:
+
+```powershell
+# 1. Clone o repositório oficial diretamente do GitHub
+git clone https://github.com/carlosguedes-dev/calculadora-python-pro.git
+
+# 2. Entre na pasta do projeto
+cd calculadora-python-pro
+
+# 3. Crie e ative um ambiente virtual isolado (venv)
+python -m venv venv
+.\venv\Scripts\Activate.ps1    # No Windows (PowerShell)
+# source venv/bin/activate     # No Linux / macOS
+
+# 4. Instale todas as dependências automaticamente via requirements.txt
+pip install -r requirements.txt
+```
+
+### 📦 Opção 2: Download Direto (Arquivo ZIP - Sem usar Git)
+Se você não tem o Git instalado ou prefere baixar o arquivo compactado:
+1. Acesse a página do repositório no GitHub: **[carlosguedes-dev/calculadora-python-pro](https://github.com/carlosguedes-dev/calculadora-python-pro)**.
+2. Clique no botão verde **"<> Code"** no topo direito da lista de arquivos.
+3. Selecione a opção **"Download ZIP"**.
+4. Extraia o arquivo baixado no seu computador (por exemplo, na Área de Trabalho ou Documentos).
+5. Abra o terminal dentro da pasta extraída e instale as bibliotecas digitando:
+   ```powershell
+   python -m venv venv
+   .\venv\Scripts\pip.exe install -r requirements.txt
+   ```
+
+---
+
+## ✨ Destaques Visuais e Funcionais
 
 - **🎨 Design System Modular (`theme_config.py`)**:
   - **3 Temas Visuais Integrados:** *Obsidian Dark* (escuro grafite com acentos em ciano/magenta), *Cyber Neon* (preto OLED com acentos roxo/verde neon) e *Sleek Light* (claro macio e limpo).
@@ -31,15 +68,17 @@ Uma calculadora de **alta estética, arquitetura modular e desempenho profission
 
 ---
 
-## 🚀 Como Executar
+## 🚀 Como Executar no Dia a Dia
 
-### 1ª Opção: Duplo Clique Silencioso (Windows - Recomendado)
-Dê dois cliques no arquivo **`Calculadora (Sem Terminal).vbs`**. A interface abrirá instantaneamente em sua tela de forma oculta e limpa, sem exibir ou piscar janela preta de terminal.
+Após ter instalado o projeto em seu computador usando uma das opções acima:
 
-### 2ª Opção: Atalho em Lote
+### 🏆 Opção 1: Duplo Clique Silencioso (Windows - Recomendado)
+Dê dois cliques no arquivo **`Calculadora (Sem Terminal).vbs`** dentro da pasta. A interface abrirá instantaneamente em sua tela de forma oculta e limpa, **sem exibir ou piscar nenhuma janela preta de terminal**!
+
+### ⚙️ Opção 2: Atalho em Lote
 Dê dois cliques em **`Abrir Calculadora.bat`**.
 
-### 3ª Opção: Via Terminal (PowerShell / CMD)
+### 💻 Opção 3: Via Terminal (PowerShell / CMD)
 Certifique-se de estar no diretório do projeto e utilize o interpretador do ambiente virtual:
 ```powershell
 .\venv\Scripts\python.exe main.py
@@ -57,6 +96,11 @@ O projeto conta com um modo headless de teste de integração contínua (CI) que
 
 ---
 
+## 🤝 Como Contribuir
+Consulte nosso guia oficial em **[CONTRIBUTING.md](CONTRIBUTING.md)** para saber como configurar seu ambiente, rodar os testes e enviar Pull Requests.
+
+---
+
 ## 📂 Estrutura do Projeto
 
 ```text
@@ -66,8 +110,11 @@ calculadora-python-pro/
 ├── gui.py                           # Interface gráfica principal em CustomTkinter
 ├── math_engine.py                   # Motor matemático, parser AST seguro, histórico e memória
 ├── theme_config.py                  # Design System, temas visuais, tipografia e geometria
+├── requirements.txt                 # Dependências oficiais (para pip install -r requirements.txt)
 ├── Calculadora (Sem Terminal).vbs   # Launcher invisível para Windows (sem tela preta)
 ├── Abrir Calculadora.bat            # Launcher em lote com auto-fechamento de console
-├── README.md                        # Documentação oficial
+├── README.md                        # Documentação oficial e guia de download
+├── CONTRIBUTING.md                  # Guia de contribuição e padrões
+├── LICENSE                          # Licença MIT
 └── .gitignore                       # Regras de ignorar venv e arquivos temporários
 ```
